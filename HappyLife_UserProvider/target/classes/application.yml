@@ -1,0 +1,15 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: UserProvider #服务名称
+  datasource:
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai
+    username: root
+    password: Yxwyyxgs.123
+    type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8101/eureka/
